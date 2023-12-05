@@ -4,7 +4,11 @@ This script addresses issues with game saves in Titanfall 2.
 
 ## Description
 
-Titanfall 2 players may encounter problems with game skipping saves or not saving at all. This script provides a fix for those issues.
+Titanfall 2 players on Windows 10/11 may encounter problems with game skipping saves or not saving at all. This script provides a fix for those issues.
+
+## Requirements
+- Admin privileges
+- Titanfall 2  (optionaly?)
 
 ## Usage
 
