@@ -17,6 +17,10 @@ Titanfall 2 players may encounter problems with game skipping saves or not savin
 Use this script at your own risk. Make sure to back up your game saves before applying any changes. The script requires administrator privileges for certain operations.
 ### THIS SCRIPT WILL DISABLE ONEDRIVE ENTIRELY
 
+## Credits
+- [elevenforum.com](https://www.elevenforum.com/t/move-or-restore-default-location-of-documents-folder-in-windows-11.8708/)
+- [TheGhak](https://steamcommunity.com/app/1237970/discussions/0/2515771867780820333/)
+
 ## Contributions
 
 Contributions are welcome! If you encounter issues or have improvements, feel free to open an issue or create a pull request.
