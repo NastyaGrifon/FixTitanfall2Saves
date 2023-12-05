@@ -6,9 +6,12 @@ This script addresses issues with game saves in Titanfall 2.
 
 Titanfall 2 players on Windows 10/11 may encounter problems with game skipping saves or not saving at all. This script provides a fix for those issues.
 
+## Before you start
+This script is destructive and WILL UNINSTALL OneDrive from your machine. It is recomended to try [this method](https://steamcommunity.com/app/1237970/discussions/0/4625714282758978393/) beforehand. If it doesn't work, then proceed with the script.
+
 ## Requirements
 - Admin privileges
-- Titanfall 2  (optionaly?)
+- Titanfall 2 (optionaly?)
 
 ## Usage
 
@@ -24,6 +27,7 @@ Use this script at your own risk. Make sure to back up your game saves before ap
 ## Credits
 - [elevenforum.com](https://www.elevenforum.com/t/move-or-restore-default-location-of-documents-folder-in-windows-11.8708/)
 - [TheGhak](https://steamcommunity.com/app/1237970/discussions/0/2515771867780820333/)
+- [Stormcrow](https://steamcommunity.com/app/1237970/discussions/0/4625714282758978393/)
 
 ## Contributions
 
