@@ -15,9 +15,10 @@ This script is destructive and WILL UNINSTALL OneDrive from your machine. It is 
 
 ## Usage
 
-1. Clone this repository to your local machine.
-2. Right-click on the script and select "Run as Administrator" to apply the necessary fixes.
-3. Check Titanfall 2 to ensure that the save issues are resolved.
+1. Download the latest available release.
+2. Unzip the archive.
+3. Right-click on the script and select "Run as Administrator" to apply the necessary fixes.
+4. Check Titanfall 2 to ensure that the save issues are resolved.
 
 ## Disclaimer
 
