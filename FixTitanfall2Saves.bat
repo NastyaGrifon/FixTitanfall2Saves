@@ -32,5 +32,8 @@ start explorer.exe
 echo Moving files from the old directory to new one
 robocopy "%OldDocumentsPath%" "%USERPROFILE%\Documents" /E /MOVE
 
+echo You're good to go! Good luck, Pilot!
+echo Press any button to close the script
+
 rem Pause to see any errors during the move
 pause
