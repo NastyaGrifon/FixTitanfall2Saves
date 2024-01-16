@@ -11,6 +11,7 @@ taskkill /f /im explorer.exe
 timeout /t 2 /nobreak >nul
 
 echo Uninstalling OneDrive using winget
+echo Sometimes winget would ask for License Agreement. In that case, please press "y" key
 winget uninstall onedrive
 
 echo Creating the "Documents" folder if not present
