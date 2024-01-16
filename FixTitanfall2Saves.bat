@@ -29,6 +29,10 @@ timeout /t 1 /nobreak >nul
 echo Launching Explorer.exe
 start explorer.exe
 
+echo Setting RW permissions for OneDrive Documents folder
+set "CurrentUser=%USERNAME%"
+icacls "%OldDocumentsPath%" /grant %CurrentUser%:(OI)(CI)F /T
+
 echo Moving files from the old directory to new one
 robocopy "%OldDocumentsPath%" "%USERPROFILE%\Documents" /E /MOVE
 
