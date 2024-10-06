@@ -2,6 +2,9 @@
 :: OG script: https://www.elevenforum.com/t/move-or-restore-default-location-of-documents-folder-in-windows-11.8708/
 @echo off
 
+set "OldDocumentsPath="
+set "CurrentUser=%USERNAME%"
+
 for /f "tokens=2*" %%i in ('reg query "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" /v "Personal" ^| find "REG_SZ"') do set "OldDocumentsPath=%%j"
 echo Old Documents Path: %OldDocumentsPath%
 
@@ -15,7 +18,9 @@ echo Sometimes winget would ask for License Agreement. In that case, please pres
 winget uninstall onedrive
 
 echo Creating the "Documents" folder if not present
-if not exist "%USERPROFILE%\Documents" mkdir "%USERPROFILE%\Documents"
+if not exist "%USERPROFILE%\Documents" (
+    mkdir "%USERPROFILE%\Documents"
+)
 
 echo Resetting paths to default for Documents
 reg add "HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" /v "Personal" /t REG_SZ /d "%%USERPROFILE%%\Documents" /f
@@ -31,7 +36,6 @@ echo Launching Explorer.exe
 start explorer.exe
 
 echo Setting RW permissions for OneDrive Documents folder
-set "CurrentUser=%USERNAME%"
 icacls "%OldDocumentsPath%" /grant %CurrentUser%:(OI)(CI)F /T
 
 echo Moving files from the old directory to new one
